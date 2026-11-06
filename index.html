@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | CTF Writeups</title>
+<meta name="description" content="Capture-the-flag writeups: methodology, commands and lessons learned.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#">~/<span>yourname</span></a>
+  <nav><a href="#writeups">Writeups</a><a href="#about">About</a><a href="https://github.com/YOUR-USERNAME">GitHub</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Hands-on hacking, written up step by step.</h1>
+    <p class="lead">I solve CTF machines and document every step: enumeration, exploitation and privilege escalation, so you can follow the reasoning, not just the commands.</p>
+    <div class="btns"><a class="btn primary" href="#writeups">Read writeups</a><a class="btn" href="#about">About me</a></div>
+  </div>
+  <div class="term" aria-hidden="true">
+    <div class="term-bar">writeups &mdash; bash</div>
+    <div class="term-body">
+      <span class="p">$</span> ls HackSmarter/<br>
+      <span class="f">Kitsune/</span>&nbsp; <span class="m">&lt;- latest</span><br>
+      <span class="p">$</span> cat Kitsune/flags.txt<br>
+      <span class="m">user.txt &nbsp;root.txt &nbsp;captured</span><br>
+      <span class="p">$</span> <span class="cursor"></span>
+    </div>
+  </div>
+</div></div>
+
+<section id="writeups"><div class="wrap">
+  <h2>Writeups</h2>
+  <p class="sub">Each writeup covers recon, foothold, privilege escalation and takeaways.</p>
+  <div class="grid">
+
+    <!-- Copy this whole <a> block for every new writeup. Change the file= path to your .md file. -->
+    <a class="card" href="writeup.html?file=HackSmarter/Kitsune/Kitsune-CTF.md">
+      <div class="meta"><span>HackSmarter</span><span class="diff-med">Medium</span></div>
+      <h3>Kitsune</h3>
+      <p>Full walkthrough from initial scan to root. Replace this line with a one-sentence summary.</p>
+      <div class="tags"><span class="tag">nmap</span><span class="tag">web</span><span class="tag">privesc</span></div>
+    </a>
+
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>About</h2>
+    <p>Write two or three sentences about yourself: what you are studying or working on, and why you do CTFs.</p>
+    <p>Add your goals here, such as a certification you are preparing for or a role you are aiming at.</p>
+  </div>
+  <div>
+    <h2>Tools &amp; skills</h2>
+    <div class="skills">
+      <span class="tag">Nmap</span><span class="tag">Burp Suite</span><span class="tag">Linux</span>
+      <span class="tag">Active Directory</span><span class="tag">Python</span><span class="tag">Bash</span>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Your Name. Writeups are for educational use on authorized lab machines.</div></footer>
+</body>
+</html>
