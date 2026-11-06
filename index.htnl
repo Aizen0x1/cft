@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,40 +10,32 @@
             background: #0d1117;
             color: #e6edf3;
             font-family: Arial, sans-serif;
-            max-width: 850px;
-            margin: 60px auto;
-            padding: 20px;
+            padding: 40px;
         }
         h1 { color: #58a6ff; }
         .card {
             background: #161b22;
+            padding: 20px;
             border: 1px solid #30363d;
             border-radius: 10px;
-            padding: 20px;
-            margin-top: 20px;
+            max-width: 500px;
         }
         a {
             color: #58a6ff;
             text-decoration: none;
         }
-        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
+
     <h1>🚩 CTF Writeups</h1>
-    <p>My cybersecurity learning journey and CTF challenge solutions.</p>
+    <p>My cybersecurity learning journey.</p>
 
     <div class="card">
         <h2>HackSmarter</h2>
-        <h3>Kitsune</h3>
-        <p>Challenge walkthrough, enumeration and exploitation.</p>
-        <a href="HackSmarter/Kitsune/writeup.html">
-            Read Kitsune Writeup →
-        </a>
+        <p>Explore my HackSmarter CTF challenges.</p>
+        <a href="HackSmarter/">View Writeups →</a>
     </div>
 
-    <footer>
-        <p>Hosted with GitHub Pages | CTF Research & Learning</p>
-    </footer>
 </body>
 </html>
