@@ -2,7 +2,7 @@
 
 Easy ad lab by xjr
 
-![image.png](Kitsune/image.png)
+![Screenshot](./image/image.png)
 
 ---
 
