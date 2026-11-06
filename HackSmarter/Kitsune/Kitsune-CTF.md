@@ -114,7 +114,7 @@ drw-rw-rw-          0  Thu Oct 15 16:19:47 2026 ..
 
 -Calendar_October.pdf
 
-![image.png](Kitsune/image%201.png)
+![Screenshot 1](./image/image%201.png)
 
 -Financial_Report.pdf
 
