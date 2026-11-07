@@ -3,6 +3,7 @@ const SITE = {
   name: "Aizen",
   tagline: "An aspiring Penetration Tester",
   announce: "Writing HackSmarter, HTB and THM walkthroughs.",
+  categories: ["HackSmarter", "HackTheBox", "TryHackMe"], /* shown even with 0 writeups; add more here */
   typed: ["Enumerating...", "Escalating...", "Capturing flags..."],
   intro: "Machine walkthroughs, security notes and things I find worth sharing.",
   about: "Write a few sentences about yourself here: what you study, what you are working toward, and why you do CTFs.",
