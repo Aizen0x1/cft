@@ -25,7 +25,7 @@ const POSTS = [
     tags: ["AD", "Enumeration", "ADCS-ESC13",],
     difficulty: "Easy",
     os: "Windows",
-    cover: "",
+    cover: "HackSmarter/Kitsune/image.png",
     excerpt: "Full walkthrough from the first scan to Full compromise"
   }
 ];
