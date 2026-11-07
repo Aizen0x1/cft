@@ -2,7 +2,8 @@ const $=(s,e=document)=>e.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const sorted=POSTS.slice().sort((a,b)=>b.date.localeCompare(a.date));
 const tally=f=>{const m={};POSTS.forEach(p=>[].concat(f(p)).forEach(v=>m[v]=(m[v]||0)+1));return m};
-const cats=tally(p=>p.category),tags=tally(p=>p.tags),arch=tally(p=>p.date.slice(0,7));
+const cats={};(SITE.categories||[]).forEach(c=>cats[c]=0);POSTS.forEach(p=>cats[p.category]=(cats[p.category]||0)+1);
+const tags=tally(p=>p.tags);
 const hue=s=>[...s].reduce((a,c)=>a+c.charCodeAt(0)*7,0)%360;
 const PER=5, page=document.body.dataset.page;
 
@@ -37,8 +38,7 @@ function side(){
   <div class="card"><h4>Announcement</h4><p class="mut">${esc(SITE.announce)}</p></div>
   <div class="card"><h4>Recent Posts</h4>${sorted.slice(0,5).map(p=>`<a class="rp" href="writeup.html?file=${p.file}">${esc(p.title)}<small>${p.date}</small></a>`).join('')}</div>
   <div class="card"><h4>Categories</h4>${Object.entries(cats).map(([c,n])=>`<a class="li" href="#cat=${encodeURIComponent(c)}">${esc(c)}<b>${n}</b></a>`).join('')}</div>
-  <div class="card"><h4>Tags</h4><div class="cloud">${Object.keys(tags).map(t=>`<a href="#tag=${encodeURIComponent(t)}" style="color:hsl(${hue(t)} 70% 68%)">${esc(t)}</a>`).join('')}</div></div>
-  <div class="card"><h4>Archives</h4>${Object.entries(arch).sort().reverse().map(([m,n])=>`<a class="li" href="#arch=${m}">${m}<b>${n}</b></a>`).join('')}</div>`;
+  <div class="card"><h4>Tags</h4><div class="cloud">${Object.keys(tags).map(t=>`<a href="#tag=${encodeURIComponent(t)}" style="color:hsl(${hue(t)} 70% 68%)">${esc(t)}</a>`).join('')}</div></div>`;
 }
 
 function render(){
