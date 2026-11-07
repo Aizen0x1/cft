@@ -8,7 +8,7 @@ const SITE = {
   intro: "Machine walkthroughs, security notes and things I find worth sharing.",
   about: "Write a few sentences about yourself here: what you study, what you are working toward, and why you do CTFs.",
   socials: [
-    ["GitHub", "https://github.com/YOUR-GITHUB"],
+    ["GitHub", "https://github.com/Aizen0x1"],
     ["Instagram", "https://instagram.com/YOUR-INSTAGRAM"],
     ["LinkedIn", "https://linkedin.com/in/YOUR-LINKEDIN"],
     ["X", "https://x.com/YOUR-X"]
