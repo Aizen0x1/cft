@@ -22,10 +22,10 @@ const POSTS = [
     file: "HackSmarter/Kitsune/Kitsune-CTF.md",
     date: "2026-11-06",
     category: "HackSmarter",
-    tags: ["nmap", "enumeration", "privesc"],
+    tags: ["AD", "Enumeration", "ADCS-ESC13",],
     difficulty: "Easy",
     os: "Windows",
     cover: "",
-    excerpt: "Full walkthrough from the first scan to root. Replace this with a one-sentence summary."
+    excerpt: "Full walkthrough from the first scan to Full compromise"
   }
 ];
